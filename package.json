@@ -1,0 +1,20 @@
+{
+  "name": "sunnyside-agency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "sass_color": "sass --watch ./sass/color.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloiszweber/sunnyside-agency.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aloiszweber/sunnyside-agency/issues"
+  },
+  "homepage": "https://github.com/aloiszweber/sunnyside-agency#readme"
+}
