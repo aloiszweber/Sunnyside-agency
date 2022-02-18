@@ -590,7 +590,6 @@ footer {
 #hamitems {
   display: none; // hide content of the items
   text-align: center;
-  border: black solid 2px;
   // clip-path: polygon(0 11%, 90% 11%, 100% 0, 75% 100%, 51% 100%, 0 100%);
   width: 300px;
   height: 400px;
@@ -600,21 +599,38 @@ footer {
 
   a {
     text-decoration: none;
-    color: black;
+    color: $Dark-grayish-blue;
   }
 }
 
 #hamnav input:checked ~ #hamitems {
   display: block;
   position: absolute;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -43%);
   transition: all 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: $White;
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  width: 95%;
+  height: 30%;
+
+  a {
+    &:hover {
+      padding: 15px;
+      border: solid $Yellow 2px;
+      border-radius: 30%;
+      background-color: $Yellow;
+    }
+  }
 }
 
 #hamitems {
   display: block;
   position: absolute;
-  transform: translate(-200%, -30%);
+  transform: translate(-1000%, -43%);
   transition: all 1s ease-in-out;
 }
 
@@ -622,4 +638,5 @@ label {
   position: absolute;
   top: 10px;
   right: 10px;
+  filter: invert(1);
 }

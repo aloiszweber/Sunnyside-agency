@@ -572,7 +572,6 @@ footer {
 #hamitems {
   display: none;
   text-align: center;
-  border: black solid 2px;
   width: 300px;
   height: 400px;
   display: flex;
@@ -581,20 +580,34 @@ footer {
 }
 #hamitems a {
   text-decoration: none;
-  color: black;
+  color: #818498;
 }
 
 #hamnav input:checked ~ #hamitems {
   display: block;
   position: absolute;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -43%);
   transition: all 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+  font-size: 20px;
+  font-family: "Barlow", sans-serif;
+  width: 95%;
+  height: 30%;
+}
+#hamnav input:checked ~ #hamitems a:hover {
+  padding: 15px;
+  border: solid #fad400 2px;
+  border-radius: 30%;
+  background-color: #fad400;
 }
 
 #hamitems {
   display: block;
   position: absolute;
-  transform: translate(-200%, -30%);
+  transform: translate(-1000%, -43%);
   transition: all 1s ease-in-out;
 }
 
@@ -602,6 +615,7 @@ label {
   position: absolute;
   top: 10px;
   right: 10px;
+  filter: invert(1);
 }
 
 /*# sourceMappingURL=style.css.map */
